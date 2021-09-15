@@ -1,6 +1,6 @@
 Se creará una aplicación en java, con un entorno gráfico realizado manualmente, sin ningún tipo de plugin en eclipse.
 
-Se creará una pantalla principal donde se nos pedirá un nombre de jugador de forma obligatoria, podremos modificar la velocidad del juego, 
+Se creará una pantalla principal donde se nos pedirá un nombre de jugador de forma obligatoria, podremos modificar la velocidad del juego,
 podremos empezar a jugar (un frame diferente), ver el ranking o salir del juego.
 
 Al empezar el juego, desaparecerá la pantalla principal y aparecerá la pantalla del juego.
@@ -8,8 +8,6 @@ Al empezar el juego, desaparecerá la pantalla principal y aparecerá la pantall
 Cuando acabe el juego por colisión de la serpiente, (consigo misma o con uno de los límites de la pantalla) aparecerá un diálogo informativo, con un botón aceptar que nos llevará a la pantalla principal.
 
 Durante el juego, se podrá pausar y reanudar con las teclas P y R.
-
-
 
 
 Se creará la clase FramePrincipal
@@ -29,7 +27,7 @@ Snake snk
 
 Egg egg
 
-Constructor 
+Constructor
 
 reescribir método paint para crear la cuadrícula
 
@@ -48,7 +46,7 @@ constructor que recibe la posicion x, y
 setters y getters
 _____________________________
 
-clase Snake 
+clase Snake
 		public Sentido snt;
 		ArrayList<Nodo> snake = new ArrayList<Nodo>();
 		public boolean eatenEgg = false;
@@ -58,7 +56,7 @@ setters getters
 
 añadir nodo
 avanzar
-avance(x,y)
+avance(x, y)
 draw(Graphics g) que será el encargado de dibujar nuestra serpiente
 
 keyPressed(Event e) que será el encargado de desplazar la serpiente en el sentido correspondiente a la tecla clicada
@@ -94,22 +92,3 @@ ________________________________
 
 class MyThreadClass implements Runnable
 private boolean pause = false;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
