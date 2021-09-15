@@ -1,0 +1,115 @@
+Se creará una aplicación en java, con un entorno gráfico realizado manualmente, sin ningún tipo de plugin en eclipse.
+
+Se creará una pantalla principal donde se nos pedirá un nombre de jugador de forma obligatoria, podremos modificar la velocidad del juego, 
+podremos empezar a jugar (un frame diferente), ver el ranking o salir del juego.
+
+Al empezar el juego, desaparecerá la pantalla principal y aparecerá la pantalla del juego.
+
+Cuando acabe el juego por colisión de la serpiente, (consigo misma o con uno de los límites de la pantalla) aparecerá un diálogo informativo, con un botón aceptar que nos llevará a la pantalla principal.
+
+Durante el juego, se podrá pausar y reanudar con las teclas P y R.
+
+
+
+
+Se creará la clase FramePrincipal
+tendra los atributos
+int:
+cell_with
+cell_height
+rows
+cols
+speed
+
+
+Thread:
+hiloJuego
+
+Snake snk
+
+Egg egg
+
+Constructor 
+
+reescribir método paint para crear la cuadrícula
+
+Las celdas x = 0 y = 0 se pintarán en negro y no serán utilizables.
+
+_____________________________
+
+Clase nodo
+
+		private int posX;
+		private int posY;
+		private int lastPosX;
+		private int lastPosY;
+
+constructor que recibe la posicion x, y
+setters y getters
+_____________________________
+
+clase Snake 
+		public Sentido snt;
+		ArrayList<Nodo> snake = new ArrayList<Nodo>();
+		public boolean eatenEgg = false;
+constructor que recibe sentido
+
+setters getters
+
+añadir nodo
+avanzar
+avance(x,y)
+draw(Graphics g) que será el encargado de dibujar nuestra serpiente
+
+keyPressed(Event e) que será el encargado de desplazar la serpiente en el sentido correspondiente a la tecla clicada
+
+_____________________________
+
+clase Egg
+		private int posX;
+		private int posY;
+constructor
+		public Egg(int posX, int posY) {
+			this.posX = posX;
+			this.posY = posY;
+		}
+
+setters getters
+
+método respawn, que establecerá una posición aleatoria en el tablero
+
+drawEgg(Graphics g) que será el responsable de dibujar el huevo
+
+
+________________________________
+
+class KeyMonitor extends KeyAdapter
+
+para controlar las posibles opciones tecleadas
+
+pausa, reanudar, salir(esc)
+
+________________________________
+
+
+class MyThreadClass implements Runnable
+private boolean pause = false;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
