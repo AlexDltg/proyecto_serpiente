@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Se creará una aplicación en java, con un entorno gráfico realizado manualmente, sin ningún tipo de plugin en eclipse.
 
 Se creará una pantalla principal donde se nos pedirá un nombre de jugador de forma obligatoria, podremos modificar la velocidad del juego, 
@@ -6,6 +7,16 @@ podremos empezar a jugar (un frame diferente), ver el ranking o salir del juego.
 Al empezar el juego, desaparecerá la pantalla principal y aparecerá la pantalla del juego.
 
 Cuando acabe el juego por colisión de la serpiente, (consigo misma o con uno de los límites de la pantalla) aparecerá un diálogo informativo, con un botón aceptar que nos llevará a la pantalla principal.
+=======
+Se creará una aplicación en java, con un entorno gráfico realizado manualmente, sin ningún tipo de pluguin en eclipse.
+
+Se creará una pantalla principal donde se nos pedirá un nombre de jugador de forma obligatoria, podremos modificar la velocidad del juego, 
+podremos empezar a jugar (un frame diferente), ver el ranking o salir del juego .
+
+Al empezar el juego, desaparecerá la pantalla principal y aparecerá la pantalla del juego.
+
+Cuando acabe el juego por colisión de la seriente, ( consigo misma o con uno de los límites de la pantalla )  aparecerá un diálogo informativo, con un botón aceptar que nos llevará a la pantlla principal.
+>>>>>>> origin/master
 
 Durante el juego, se podrá pausar y reanudar con las teclas P y R.
 
@@ -31,7 +42,11 @@ Egg egg
 
 Constructor 
 
+<<<<<<< HEAD
 reescribir método paint para crear la cuadrícula
+=======
+reescribir metodo paint para crear la cuadrícula
+>>>>>>> origin/master
 
 Las celdas x = 0 y = 0 se pintarán en negro y no serán utilizables.
 
@@ -44,7 +59,11 @@ Clase nodo
 		private int lastPosX;
 		private int lastPosY;
 
+<<<<<<< HEAD
 constructor que recibe la posicion x, y
+=======
+constructor que recibe la posicion x,y
+>>>>>>> origin/master
 setters y getters
 _____________________________
 
@@ -76,7 +95,11 @@ constructor
 
 setters getters
 
+<<<<<<< HEAD
 método respawn, que establecerá una posición aleatoria en el tablero
+=======
+metodo respawn, que establecerá una posición aleatoria en el tablero
+>>>>>>> origin/master
 
 drawEgg(Graphics g) que será el responsable de dibujar el huevo
 
@@ -93,7 +116,11 @@ ________________________________
 
 
 class MyThreadClass implements Runnable
+<<<<<<< HEAD
 private boolean pause = false;
+=======
+private boolean  pause = false;
+>>>>>>> origin/master
 
 
 
